@@ -1,0 +1,11 @@
+<div class="sitename">
+  <h1><%= data.info.url %></h1>
+  <h2>since 2010</h2>
+</div>
+
+<div>
+  <% data.site.sites.each do |s| %>
+    <a href=" <%= s.url %>">
+    <%= s.name %></a>
+  <% end %>
+</div>

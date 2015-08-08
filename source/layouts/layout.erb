@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og:http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="tango of funny">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@<%= data.info.author%>"/>
+    <meta property="og:title" content="<%= data.info.title %>"/>
+    <meta property="og:type"  content="website"/>
+    <meta property="og:image" content="/images/<%= data.info.bgname %>"/>
+    <meta property="og:description" content="My portal site"/>
+    <title><%= data.info.title %></title>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <div class="container">
+    <%= yield %>
+    <p>Copyright(c) <a href="https://twitter.com/<%= data.info.author %>"><%= data.info.author %></a></p>
+    </div>
+  </body>
+</html>
