@@ -30,3 +30,18 @@ body {
   text-decoration: none;
   color: #ffffff; 
 }
+
+.container a:hover, h1:hover, h2:hover{
+  background-color: rgba(135,135,135,0.7);
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition:    background-color 0.3s ease;
+  -o-transition:      background-color 0.3s ease;
+  transition:         background-color 0.3s ease;
+}
+
+.container a, h1, h2{
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+  transition:         all 0.3s ease;
+}
